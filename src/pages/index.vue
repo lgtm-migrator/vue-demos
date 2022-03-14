@@ -32,9 +32,9 @@ async function onClick() {
       </p>
     </div>
     <img
-      v-if="food !== '什么'"
+      v-if="food !== '什么' && !isStarted"
       w-100
-      :src="'/foods/' + food + '.jpg'"
+      :src="'https://raw.githubusercontent.com/fffzlfk/vue-what-to-eat/master/public/foods/' + food + '.jpg'"
     >
     <button v-if="!isStarted" btn @click="onClick()">
       开始
