@@ -17,6 +17,6 @@ A simple app that helps you choose what to eat written in Vue.js.
 To deploy this project run
 
 ```bash
-  yarn install && yarn build
-  serve -s build
+pnpm build
+serve -s dist
 ```
