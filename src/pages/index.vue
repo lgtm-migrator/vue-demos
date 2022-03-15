@@ -2,6 +2,7 @@
 import { getRandomInt } from '~/composables/utils'
 import Foods from '~/composables/foods.json'
 
+const BASE_URL = import.meta.env.BASE_URL
 const food = ref('什么')
 const isStarted = ref(false)
 const description = $computed(() => food.value + (food.value === '什么' ? '?' : '!'))
@@ -34,7 +35,7 @@ async function onClick() {
     <img
       v-if="food !== '什么' && !isStarted"
       w-100
-      :src="'https://raw.githubusercontent.com/fffzlfk/vue-what-to-eat/master/public/foods/' + food + '.jpg'"
+      :src="BASE_URL + '/foods/' + food + '.jpg'"
     >
     <button v-if="!isStarted" btn @click="onClick()">
       开始
