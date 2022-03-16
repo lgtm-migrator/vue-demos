@@ -4,5 +4,5 @@ A series of simple app written in Vue.js.
 
 ## directory
 
-- [what-to-eat](http://localhost:3333/vue-demos/what-to-eat)
-- [tree](http://localhost:3333/vue-demos/tree)
+- [what-to-eat](https://fffzlfk.github.io/vue-demos/what-to-eat)
+- [tree](https://fffzlfk.github.io/vue-demos/tree)
