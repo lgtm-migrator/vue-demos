@@ -1,6 +1,6 @@
 # vue-demos
 
-A series of simple app written in Vue.js.
+A series of simple apps written in Vue.js.
 
 ## directory
 
