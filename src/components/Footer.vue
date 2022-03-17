@@ -17,7 +17,7 @@ useTitle(`${subTitle}${subTitle === '' ? '' : ' | '}Vue Demos`)
       class="icon-btn"
       i-carbon-logo-github
       rel="noreferrer"
-      href="https://github.com/fffzlfk/vue-what-to-eat"
+      href="https://github.com/fffzlfk/vue-demos"
       target="_blank"
       title="GitHub"
     />
