@@ -3,17 +3,17 @@ import { getRandomInt } from '~/composables/utils'
 import Foods from '~/composables/foods.json'
 
 const BASE_URL = import.meta.env.BASE_URL
-const food = ref('什么')
-const isStarted = ref(false)
-const description = $computed(() => food.value + (food.value === '什么' ? '?' : '!'))
+let food = $ref('什么')
+let isStarted = $ref(false)
+const description = $computed(() => food + (food === '什么' ? '?' : '!'))
 async function onClick() {
-  isStarted.value = (true)
+  isStarted = true
   for (let _ = 0; _ < 10; _++) {
     await new Promise(resolve => setTimeout(resolve, 200))
     const idx = getRandomInt(0, Foods.length)
-    food.value = Foods[idx]
+    food = Foods[idx]
   }
-  isStarted.value = false
+  isStarted = false
 }
 </script>
 
