@@ -2,15 +2,15 @@
 const BASE_URL = import.meta.env.BASE_URL
 const projects = [
   {
-    name: 'what-to-eat',
+    name: 'What to eat',
     url: `${BASE_URL}what-to-eat`,
   },
   {
-    name: 'tree',
+    name: 'Tree',
     url: `${BASE_URL}tree`,
   },
   {
-    name: 'countdown',
+    name: 'Countdown',
     url: `${BASE_URL}countdown`,
   },
 ]
