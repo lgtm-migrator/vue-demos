@@ -1,5 +1,9 @@
 <script setup lang="ts">
+import { capitalize } from 'vue'
 import { isDark, toggleDark } from '~/composables'
+const path = window.location.pathname
+const subTitle = capitalize(path.slice(11))
+useTitle(`${subTitle}${subTitle === '' ? '' : ' | '}Vue Demos`)
 </script>
 
 <template>
