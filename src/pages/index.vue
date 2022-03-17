@@ -9,6 +9,10 @@ const projects = [
     name: 'tree',
     url: `${BASE_URL}tree`,
   },
+  {
+    name: 'countdown',
+    url: `${BASE_URL}countdown`,
+  },
 ]
 </script>
 
