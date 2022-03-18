@@ -1,9 +1,9 @@
-# vue-demos
+# Vue Demos
 
 A series of simple apps written in Vue.js.
 
-## directory
+## Directory
 
-- [what-to-eat](https://fffzlfk.github.io/vue-demos/what-to-eat)
-- [tree](https://fffzlfk.github.io/vue-demos/tree)
-- [countdown](https://fffzlfk.github.io/vue-demos/tree/countdown)
+- [What to eat](https://fffzlfk.github.io/vue-demos/what-to-eat)
+- [Tree](https://fffzlfk.github.io/vue-demos/tree)
+- [Countdown](https://fffzlfk.github.io/vue-demos/countdown)
