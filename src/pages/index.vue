@@ -13,6 +13,10 @@ const projects = [
     name: 'Countdown',
     url: `${BASE_URL}countdown`,
   },
+  {
+    name: 'Todo',
+    url: `${BASE_URL}todo`,
+  },
 ]
 </script>
 
