@@ -106,7 +106,7 @@ function setSeconds(op: Opteration) {
 span {
   position: absolute;
   left: 50%;
-  top: 53%;
+  top: 50%;
   font-weight: bold;
   transform: translateX(-50%) translateY(-50%);
   font-family: 'Courier New', Courier, monospace;
