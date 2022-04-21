@@ -8,3 +8,4 @@ A series of simple apps written in Vue.js.
 - [Tree](https://fffzlfk.github.io/vue-demos/tree)
 - [Countdown](https://fffzlfk.github.io/vue-demos/countdown)
 - [Todo](https://fffzlfk.github.io/vue-demos/todo)
+- [Chat Window](https://fffzlfk.github.io/vue-demos/chat-window)
