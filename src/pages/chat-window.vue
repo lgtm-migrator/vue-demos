@@ -1,48 +1,61 @@
 <script setup lang="ts">
 interface Message {
-  id: number;
-  user: string;
-  text: string;
+  id: number
+  user: string
+  text: string
 }
 const messages = $ref<Message[]>([
   {
     id: 1,
-    user: "John",
-    text: "Hello",
+    user: 'John',
+    text: 'Hello',
   },
   {
     id: 2,
-    user: "John",
-    text: "Hi",
+    user: 'John',
+    text: 'Hi',
   },
   {
     id: 3,
-    user: "Me",
-    text: "How are you?",
+    user: 'Me',
+    text: 'How are you?',
   },
   {
     id: 4,
-    user: "John",
-    text: "Fine",
+    user: 'John',
+    text: 'Fine',
   },
-]);
+])
 
-let newMessage = $ref("");
+let newMessage = $ref('')
 
-const elem = $ref<HTMLElement>();
+const elem = $ref<HTMLElement>()
+
+const scrollToBottom = () => {
+  elem.scrollTop = elem.scrollHeight
+}
+
+watch(messages, () => {
+  console.log('messages changed')
+  scrollToBottom()
+}, { flush: 'post' })
 
 function isMe(message: Message) {
-  return message.user === "Me";
+  return message.user === 'Me'
 }
 
 function addMessage() {
   messages.push({
     id: messages.length + 1,
-    user: "Me",
+    user: 'Me',
     text: newMessage,
-  });
-  newMessage = "";
-  elem.scrollTop = elem.scrollHeight;
+  })
+  messages.push({
+    id: messages.length + 1,
+    user: 'John',
+    text: 'Well!',
+  })
+  newMessage = ''
 }
 </script>
 
@@ -57,8 +70,7 @@ function addMessage() {
       flex
       flex-col
       space-y-2
-      p-b-20
-      p-x-2
+      p-2
       overflow-y-scroll
     >
       <div
@@ -70,8 +82,10 @@ function addMessage() {
       </div>
     </div>
     <div flex flex-row w-100 class="inputbox">
-      <input type="text" v-model="newMessage" />
-      <button btn @click="addMessage()">enter</button>
+      <input v-model="newMessage" type="text" @keyup.enter="addMessage()">
+      <button btn @click="addMessage()">
+        enter
+      </button>
     </div>
   </div>
 </template>
