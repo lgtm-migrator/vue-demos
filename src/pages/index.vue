@@ -20,7 +20,7 @@ const projects = [
   {
     name: 'Chat Window',
     url: `${BASE_URL}chat-window`,
-  }
+  },
 ]
 </script>
 
