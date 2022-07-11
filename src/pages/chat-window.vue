@@ -36,7 +36,6 @@ const scrollToBottom = () => {
 }
 
 watch(messages, () => {
-  console.log('messages changed')
   scrollToBottom()
 }, { flush: 'post' })
 
