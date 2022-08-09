@@ -48,7 +48,6 @@ function setSeconds(op: Opteration) {
   }
   reset()
 }
-
 </script>
 
 <template>
@@ -89,7 +88,7 @@ function setSeconds(op: Opteration) {
           stroke-linecap="round"
         />
       </svg>
-      <span :style="{fontSize: 0.5 * size+'px'}">{{ countdown }}</span>
+      <span :style="{ fontSize: `${0.5 * size}px` }">{{ countdown }}</span>
     </div>
     <button btn z-10 @click="reset()">
       reset

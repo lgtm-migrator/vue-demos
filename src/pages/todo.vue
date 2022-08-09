@@ -29,7 +29,6 @@ function removeTodo(id: number) {
 function removeDone() {
   todos = todos.filter((todo: Item) => !todo.done)
 }
-
 </script>
 
 <template>

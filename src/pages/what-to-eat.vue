@@ -35,7 +35,7 @@ async function onClick() {
     <img
       v-if="food !== '什么' && !isStarted"
       w-100
-      :src="BASE_URL + '/foods/' + food + '.jpg'"
+      :src="`${BASE_URL}/foods/${food}.jpg`"
     >
     <button v-if="!isStarted" btn @click="onClick()">
       开始
